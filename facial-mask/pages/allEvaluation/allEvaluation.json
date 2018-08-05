@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wxc-icon": "../../dist/packages/@minui/wxc-icon/dist/index",
+    "wxc-rate": "../../dist/packages/@minui/wxc-rate/dist/index",
+    "wxc-avatar": "../../dist/packages/@minui/wxc-avatar/dist/index"
+  }
+}

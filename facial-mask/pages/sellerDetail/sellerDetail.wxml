@@ -1,0 +1,102 @@
+<import src="../../template/evaluation/evaluation-template.wxml" />
+<scroll-view scroll-y="true" style="width:100%;min-height:100%;">
+  <view class="swiper-container">
+    <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" current='swiperCurrent' bindchange="swiperchange">
+      <swiper-item class='swiper_item' wx:for="{{new_banner}}" wx:key="id" wx:for-item="item">
+        <image src="https://omg.thinkerdns.com//Public//Uploads//2018-07-12//5b46fc98621a5.jpg" class="slide-image" mode="aspectFill" />
+      </swiper-item>
+    </swiper>
+    <view class="dots">
+      <block wx:for="{{banners}}" wx:key="unique">
+        <view class="dot{{index === swiperCurrent ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+</scroll-view>
+<!-- 门店详情 -->
+
+<view wx:if="{{showLoading}}">
+  <view class='loading'>正在加载中...</view>
+</view>
+<view wx:else>
+  <view class='store-detail-wrap'>
+    <view class='store-title'>
+      <view class='title-theme'>
+        <view class='title1'>{{title}}</view>
+        <view class='distance'>1.7KM</view>
+      </view>
+      <view class='title-address clearfix'>
+        <view class='title2'>{{address}}</view>
+        <view class='daohang' catchtap='openLocation'>导航</view>
+      </view>
+    </view>
+    <view class='margin-line'></view>
+    <view class='store-time'>
+      <view>{{start_time}}-{{end_time}}周一到周日</view>
+    </view>
+    <view class='margin-line'></view>
+    <view class='list-wrap'>
+      <!-- <block wx:for="{{list}}" wx:for-item="item">
+      <view class='list' catchtap='onTapDetail' data-id="{{item.id}}">
+        <view class='banner-img'>
+          <image src="{{'https://wwy.ittun.com'+item.image}}"></image>
+          <view class='name'>
+            <text>{{item.id}}{{item.name}}</text>
+          </view>
+          <view class='description'>
+            <view class='address'><image class="address-img" src="/images/icon/address.png" />{{item.address}}</view>
+            <text class='distance'>{{item.distance}}</text>
+          </view>
+        </view>
+      </view>
+    </block> -->
+      <!-- 请选择服务 -->
+      <view class='service'>
+        <wxc-list class="item service-title" title="请选择服务" arrow="{{false}}"></wxc-list>
+        <view wx:if="{{checkService}}">
+          <view class="list-item">
+            <block wx:for="{{service}}" wx:for-item="item" wx:key="serv">
+              <view class="list-check" data-id="{{item.id}}" catchtap='onChooseBeautician'>
+                <wxc-list class="item" title="{{item.name}}" detail="{{item.description}}" desc="{{'￥'+item.price}}"></wxc-list>
+              </view>
+            </block>
+          </view>
+        </view>
+        <view wx:else>
+          <view class='hint'>店铺正在装修，敬请期待</view>
+        </view>
+      </view>
+      <view class='margin-line'></view>
+      <!-- 评价 -->
+      <view wx:if="{{evalute}}">
+       <view class='common-title'>
+            服务评价
+            <text class='evalute-num'>(2222)</text>
+          </view>
+        <template is="evaluation" data="{{comments}}"></template>
+        <!-- <view wx:else>
+          <view>店铺正在装修,敬请期待</view>
+        </view> -->
+         <view class='comments-all' catchtap='onAllEvaluation' data-id="{{id}}">查看全部评价</view>
+        <view class='margin-line'></view>
+      </view>
+
+      <!-- 门店信息 -->
+      <view class='store-information'>
+        <view class='common-title'>门店信息</view>
+        <view class="list-item">
+          <wxc-list class="item" icon="location" icon-color="#8e959b" title="{{address}}"></wxc-list>
+          <wxc-list class="item" icon="feedback" icon-color="#8e959b" mode="none" title="{{traffic}}" arrow="{{false}}"></wxc-list>
+
+        </view>
+      </view>
+      <!-- footer -->
+      <view class='footer'>
+        <view class='footer-detail'>
+          <view class='client'>客服电话：4008-010-504</view>
+          <view>客服时间：9：00-21：00周一至周日</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

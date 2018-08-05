@@ -1,0 +1,14 @@
+/* pages/onYear/onYear.wxss */
+
+.button{
+  background: #604687;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color:#fff;
+  font-size:16px;
+  margin-top:110rpx;
+  width:90%;
+  margin:110rpx auto 0;
+  border-radius: 10px;
+}

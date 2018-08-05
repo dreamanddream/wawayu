@@ -1,0 +1,12 @@
+<template name="dialog">
+<view class='dialog-container' wx:if="{{authorizeShow}}">
+    <view class='dialog-mask'></view>
+    <view class='dialog-info'>
+        <view class='dialog-title'>提示</view>
+        <view class='dialog-content'>需要您的授权才能获取最佳体验</view>
+        <view class='dialog-footer'>
+          <button class='dialog-btn' open-type="getUserInfo" bindgetuserinfo='bindGetUserInfo'>知道了</button>
+        </view>
+    </view>
+</view>
+</template>

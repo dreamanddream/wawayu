@@ -1,0 +1,25 @@
+<!--pages/myMoney/myMoney.wxml-->
+<view class='myMoney'>
+<view class="money-fonts">
+  <view class='money-title'>账户余额(元)</view>
+  <view class='money-num'>{{money}}</view>
+</view>
+  <view class='recharge-money' catchtap='onRechargeMoney'>充值</view>
+</view>
+<!-- 支付明细 -->
+<view class='money-detail'>
+  <view class='money-title'>收支明细</view>
+  <block wx:for="{{moneyDetail}}"wx:for-item="item" wx:key="unique">
+    <view class='money-list'>
+    <view class='money-des'>
+      <view class='money-fonts'>{{item.msg}}</view>
+      <view class='date'>{{item.dateline}}</view>
+    </view>
+    <view class='money-num'>{{item.value}}</view>
+  </view>
+  </block>
+</view>
+<!-- 没有明细 -->
+<view wx:if="{{abnor}}">
+  <wxc-abnor type="DATA"></wxc-abnor>
+</view>

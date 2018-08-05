@@ -1,0 +1,25 @@
+<!--pages/changeTel/changeTel.wxml-->
+<view class='common-wrap'>
+  <view class='common-title'>
+    <view class='big-title'>请填写手机号</view>
+    <view class='two-title'>请填写您的手机号码</view>
+  </view>
+</view>
+<form bindsubmit="formSubmit" class='common-center form'>
+  <view class='write-tel common-center'>
+    <input type='text' placeholder='请输入您的手机号' name="tel" bindblur="myTel"/>
+  </view>
+  <view class='check-code common-center'>
+    <view class='write-code'>
+      <input type='text' placeholder='请输入验证码' name="checkCode"/>
+    </view>
+    <view class='time'>
+     <view class='time-detail' catchtap='onGetcode'>获取验证码</view>
+    </view>
+    <!-- <view>60s</view> -->
+  </view>
+  <view class="btn-area common-center">
+    <button formType="submit" class='tijiao'>确定</button>
+    <button class='quxiao' form-type='reset'>取消</button>
+  </view>
+</form>

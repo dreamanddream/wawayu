@@ -1,0 +1,138 @@
+<!--pages/setting/setting.wxml-->
+<view class='setting'>
+  <form bindsubmit="formSubmit">
+    <!-- <input type='text' placeholder='大西瓜'/>
+  <view class='avatar-img'>
+    <image src=""></image>
+  </view> -->
+    <view class='margin-line'></view>
+    <view class='year-tel'>
+      <view class='common-list coupon' catchtap='onYear'>
+        <view class='common-theme'>年龄</view>
+        <view class='common-des'>
+          <text class='common-detail'>{{age}}</text>
+          <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+        </view>
+      </view>
+      <view class='common-list coupon' catchtap='onChangeTel'>
+        <view class='common-theme'>更换手机号</view>
+        <view class='common-des'>
+          <text class='common-detail'>{{telphone}}</text>
+          <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+        </view>
+      </view>
+    </view>
+    <view class='margin-line'></view>
+    <view class='sex-other'>
+      <view class='common-list coupon' catchtap='onSex'>
+        <view class='common-theme'>性别</view>
+        <view class='common-des'>
+          <text class='common-detail'>{{genderType}}</text>
+          <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+        </view>
+      </view>
+      <view class='common-list coupon' catchtap='ongetStyle'>
+        <view class='common-theme'>风格定位</view>
+        <view class='common-des'>
+          <text class='common-detail'>{{style}}</text>
+          <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+        </view>
+      </view>
+      <view class='common-list coupon' catchtap='onGetVocation'>
+        <view class='common-theme'>职业属性</view>
+        <view class='common-des'>
+          <text class='common-detail'>{{vocation}}</text>
+          <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+        </view>
+      </view>
+    </view>
+  </form>
+</view>
+<!-- 更改年龄 -->
+<view class='common-change' wx:if="{{year}}" style="height:100%">
+  <view class='common-wrap'>
+    <view class='common-title'>
+      <view class='big-title'>年龄</view>
+      <view class='two-title'>请选择年龄，以便我们更好的为您服务</view>
+    </view>
+  </view>
+  <view class='year-choose'>
+    <view class='common-item' data-yearId="70后" catchtap="onChooseYear">
+      <view class='year'>70后</view>
+      <view class='choose-icon' wx:if='{{yearId=="70后"?true:false}}'>
+        <wxc-icon size="30" type="right" color="#604687"></wxc-icon>
+      </view>
+    </view>
+    <view class='common-item' data-yearId="80后" catchtap="onChooseYear">
+      <view class='year'>80后</view>
+      <view class='choose-icon' wx:if='{{yearId=="80后"?true:false}}'>
+        <wxc-icon size="30" type="right" color="#604687"></wxc-icon>
+      </view>
+    </view>
+    <view class='common-item' data-yearId="90后" catchtap="onChooseYear">
+      <view class='year'>90后</view>
+      <view class='choose-icon' wx:if='{{yearId=="90后"?true:false}}'>
+        <wxc-icon size="30" type="right" color="#604687"></wxc-icon>
+      </view>
+    </view>
+    <view class='common-item' data-yearId="00后" catchtap="onChooseYear">
+      <view class='year'>00后</view>
+      <view class='choose-icon' wx:if='{{yearId=="00后"?true:false}}'>
+        <wxc-icon size="30" type="right" color="#604687"></wxc-icon>
+      </view>
+    </view>
+    <view class='common-item' data-yearId="其它" catchtap="onChooseYear">
+      <view class='year'>其它</view>
+      <view class='choose-icon' wx:if='{{yearId=="其它"?true:false}}'>
+        <wxc-icon size="30" type="right" color="#604687"></wxc-icon>
+      </view>
+    </view>
+  </view>
+  <view class='button' catchtap="onYearResult">确定</view>
+  <view class='kongbai'></view>
+</view>
+<!-- 更改性别 -->
+<view class='common-change' wx:if="{{sex}}" style="height:100%">
+  <view class='common-wrap'>
+    <view class='common-title'>
+      <view class='big-title'>性别</view>
+      <view class='two-title'>请选择性别，以便我们更好的为您服务</view>
+    </view>
+  </view>
+  <view class='year-choose'>
+    <view class='common-item' data-sexId="1" catchtap="onChooseSex">
+      <view class='year'>男</view>
+      <view class='choose-icon' wx:if='{{sexId==1?true:false}}'>
+        <wxc-icon size="30" type="right" color="#604687"></wxc-icon>
+      </view>
+    </view>
+    <view class='common-item' data-sexId="2" catchtap="onChooseSex">
+      <view class='year'>女</view>
+      <view class='choose-icon' wx:if='{{sexId==2?true:false}}'>
+        <wxc-icon size="30" type="right" color="#604687"></wxc-icon>
+      </view>
+    </view>
+  </view>
+  <view class='button' catchtap="onSexResult">确定</view>
+</view>
+<!-- 风格定位 -->
+<!-- <view class='common-change' wx:if="{{style}}" style="height:100%">
+  <view class='common-wrap'>
+    <view class='common-title'>
+      <view class='big-title'>风格</view>
+      <view class='two-title'>请选择风格，以便我们更好的为您服务</view>
+    </view>
+  </view>
+  <view class='year-choose'>
+    <block wx:for="{{styleType}}" wx:for-item="item" wx:key="unique">
+      <view class='common-item' data-yearId="70后" catchtap="onChooseYear">
+      <view class='year'>70后</view>
+      <view class='choose-icon' wx:if='{{yearId=="70后"?true:false}}'>
+        <wxc-icon size="30" type="right" color="#604687"></wxc-icon>
+      </view>
+    </view>
+    </block>
+  </view>
+  <view class='button' catchtap="onYearResult">确定</view>
+  <view class='kongbai'></view>
+</view> -->

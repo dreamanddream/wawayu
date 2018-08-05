@@ -1,0 +1,48 @@
+.evalute{
+  width:90%;
+  margin:0 auto;
+}
+.head-img{
+  width:60rpx;
+  height: 60rpx;
+  float: left;
+  border-radius: 100%;
+}
+.evalute .evalute-detail{
+  float:float;
+  margin-left:75rpx;
+}
+.evalute .name-time{
+  font-size:14px;
+  margin-top:20rpx;
+  line-height: 27px;
+}
+.evalute .name-time .name{
+  float:left;
+}
+.evalute .name-time .time{
+  color:#8e959b;
+  float:right;
+}
+.evalute .star,.evalute .evalute-service{
+  font-size:14px;
+  color:#8e959b;
+  margin-bottom:20rpx;
+}
+.service-font{
+  margin-right:5px;
+}
+.evalute-comments .comments-detail{
+  font-size:16px;
+}
+.evalute .comments-img image{
+  float:left;
+  width:130rpx;
+  height:130rpx;
+  margin-right:10rpx;
+  margin-top:15rpx;
+}
+.star .star-font{
+  float:left;
+  margin-right:5px;
+}

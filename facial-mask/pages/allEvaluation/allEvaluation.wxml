@@ -1,0 +1,12 @@
+<import src="../../template/evaluation/evaluation-template.wxml" />
+<!-- 评价标签 -->
+<view class="label-wrap clearfix">
+  <view class="'label'+{{tagId==0?'active':''}}" data-id="0" catchtap='onEvaluation'>全部</view>
+  <block wx:for="{{labelData}}" wx:key="unique">
+  <view class="'label'+{{tagId==item.id?'active':''}}" data-id="{{item.id}}" catchtap='onEvaluation'>{{item.name}}</view>
+  </block>
+</view>
+<!-- 评价-->
+<block wx:for="{{comments}}" wx:key="items" wx:for-item="comments">
+  <template is="evaluation" data="{{comments}}"></template>
+</block>

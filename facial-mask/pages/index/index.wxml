@@ -1,0 +1,46 @@
+<!-- <modal modal-hidden="{{is_modal_Hidden}}" modal-msg="{{is_modal_Msg}}" /> -->
+<scroll-view scroll-y="true" style="width:100%;min-height:100%;">
+  <view wx:if="{{!showNoBanners}}" class="swiper-container">
+    <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" current='swiperCurrent' bindchange="swiperchange">
+      <!--<block wx:for="{{banners}}" wx:key="id">-->
+      <!-- translate({{ (swiperCurrent == index - 1 || swiperCurrent == index + 1) ? (swiperCurrent - index) * 30 : 0 }}%, 0); -webkit-transition: 0.6s;  -->
+      <swiper-item class='swiper_item' wx:for="{{banners}}" wx:key="id">
+        <!-- <image bindtap="tapBanner" data-id="{{item.businessId}}" src="{{'https://wwy.ittun.com'+item.ban_murl}}" class="slide-image" style="-webkit-transform: scale({{ swiperCurrent == index ? 0.9 : 0.65 }})" mode="aspectFill" /> -->
+        <image bindtap="tapBanner" data-id="{{item.businessId}}" src="{{'https://omg.thinkerdns.com'+item.ban_murl}}" class="slide-image" mode="aspectFill" />
+      </swiper-item>
+      <!--</block>-->
+    </swiper>
+    <view class="dots">
+      <block wx:for="{{banners}}" wx:key="unique">
+        <view class="dot{{index === swiperCurrent ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+</scroll-view>
+<!--列表内容-->
+<view class='index-title'>
+      <view class='title1'>附近门店</view>
+      <view class='title2'>为你精选附近门店</view>
+    </view>
+<view wx:if="{{showLoading}}">
+  <view class='loading'>正在加载中...</view>
+</view>
+<view wx:else>
+  <view class='list-wrap'>
+  
+    <block wx:for="{{list}}" wx:for-item="item">
+      <view class='list' catchtap='onTapDetail' data-id="{{item.id}}">
+        <view class='banner-img'>
+          <image src="{{'https://omg.thinkerdns.com'+item.image}}"></image>
+          <view class='name'>
+            <text>{{item.id}}{{item.name}}</text>
+          </view>
+          <view class='description'>
+            <view class='address'><image class="address-img" src="/images/icon/address.png" />{{item.address}}</view>
+            <text class='distance'>{{item.distance}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

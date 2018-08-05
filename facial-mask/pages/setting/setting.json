@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "dialog": "../../components/prompt/prompt",
+    "wxc-icon": "../../dist/packages/@minui/wxc-icon/dist/index",
+    "wxc-list": "../../dist/packages/@minui/wxc-list/dist/index"
+  }
+}

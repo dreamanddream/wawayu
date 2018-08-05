@@ -1,0 +1,91 @@
+@import "../../template/dialog/dialog-template.wxss";
+.beautician-title{
+  width:90%;
+  margin:0 auto;
+}
+.beautician-title .big-title{
+  margin:30rpx 0 20rpx;
+  font-size:20px;
+  font-weight: bold;
+}
+beautician-title .two-title{
+  font-size:16px;
+  color:#91979d;
+   margin-bottom:40rpx;
+
+}
+.beautician-list-wrap{
+  border-top:1px solid #e7e7e7;
+}
+.beautician-list{
+  margin:10px auto;
+  width:90%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.beautician-list .book-order{
+  text-align: center;
+  width:160rpx;
+  height:60rpx;
+  line-height: 60rpx;
+  background: #61458c;
+  color:#fff;
+  font-size:12px;
+  border-radius: 5px;
+  margin-bottom:20rpx;
+}
+.beautician-list .book-time{
+  color:#61458c;
+  font-size:10px;
+}
+.beautician-list .order-time{
+  width:160rpx;
+}
+.beautician-list .icon-wrap{
+  position: relative;
+}
+.beautician-list .icon-img{
+  width:148rpx;
+  height:148rpx;
+  border:1px solid #e7e7e7;
+  border-radius: 5px;
+}
+.beautician-list .beautician-detail{
+  flex-grow: 1;
+  margin-left: 20rpx;
+}
+.beautician-detail .detail{
+  font-size:12px;
+  margin-bottom:15rpx;
+}
+.beautician-detail .price{
+  font-size:14px;
+  color:#61458c;
+}
+.name-years{
+  margin-bottom:15rpx;
+}
+.name-years .name{
+  font-size: 16px;
+  color:#61458c;
+}
+.name-years .years{
+  font-size:12px;
+  padding:2px 5px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  margin-left:20rpx;
+}
+.icon-message{
+  font-size:10px;
+  color:#fff;
+  padding:2px 5px;
+  background: #999999;
+  position: absolute;
+  bottom:-5rpx;
+  left:50%;
+  transform: translate(-50%,0);
+  width:100rpx;
+  border-radius: 10px;
+  text-align: center;
+}

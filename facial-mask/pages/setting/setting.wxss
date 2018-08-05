@@ -1,0 +1,45 @@
+/* pages/setting/setting.wxss */
+.common-list .common-detail{
+  color:#91979d;
+}
+.common-list{
+  border-bottom: 1px solid #e8e8e8;
+}
+.year-tel .common-list:last-child{
+  border: none;
+}
+/* 更改性别 */
+.common-change{
+  width:100%;
+  position: absolute;
+  top:0;
+  z-index: 10000;
+  background: #fff;
+  animation: myAnimation 1s;
+}
+/* 更改性别按钮 */
+.button{
+  background: #604687;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color:#fff;
+  font-size:16px;
+  margin-top:110rpx auto 0rpx;
+  width:90%;
+  margin:110rpx auto 0;
+  border-radius: 10px;
+}
+.kongbai{
+  height: 50rpx;
+  width:100%;
+  background: #fff;
+}
+@keyframes myAnimation{
+  0%{
+    right:-100%;
+  }
+  100%{
+    right:0;
+  }
+}

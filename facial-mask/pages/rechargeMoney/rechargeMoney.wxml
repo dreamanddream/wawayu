@@ -1,0 +1,41 @@
+<!--pages/rechargeMoney/rechargeMoney.wxml-->
+<form bindsubmit="formSubmit">
+  <view class='recharge-label common-center'>
+    <view class='label'>
+      <view>充1000</view>
+      <view>送200</view>
+    </view>
+    <view class='label'>
+      <view>充1000</view>
+      <view>送200</view>
+    </view>
+    <view class='label'>
+      <view>充1000</view>
+      <view>送200</view>
+    </view>
+  </view>
+  <input type='text' class='write-money'>其他金额</input>
+  <view class='pay-type'>
+  <view class='pay-title'>
+    支付方式
+  </view>
+  <view class='pay-detail clearfix'>
+    <view class='pay-wrap clearfix'>
+      <view class='weixin-icon'>
+        <wxc-icon size="60" type="weixin" color="#fff"></wxc-icon>
+      </view>
+      <view class='pay-details'>
+        <view class='one-des'>微信支付</view>
+        <view class='two-des'>推荐使用微信支付</view>
+      </view>
+      <view class='check-icon'>
+        <wxc-icon size="50" type="check" color="#604687"></wxc-icon>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='line-top'></view>
+  <view class="btn-area">
+    <button formType="submit" class='sub'>确定</button>
+  </view>
+</form>

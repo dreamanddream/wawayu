@@ -1,0 +1,20 @@
+<!--pages/chooseCoupon/chooseCoupon.wxml-->
+<view class='coupon-wrap'>
+  <view class='coupon-list clearfix'>
+    <view class='coupon-left'>
+      <view class='price'>￥<text class='price-num'>60</text></view>
+      <view class='choose-price'>满5000元可用</view>
+    </view>
+    <view class='coupon-right clearfix'>
+      <view class='coupon-des'>
+        <view class='coupon-title'>全场通用券</view>
+        <view class='coupon-date'>
+          2018-03-31到期
+        </view>
+      </view>
+      <view class='coupon-button'>
+        立即使用
+      </view>
+    </view>
+  </view>
+</view>

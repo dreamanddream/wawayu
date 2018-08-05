@@ -1,0 +1,80 @@
+<!-- 
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权登录 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<import src='../../template/dialog/dialog-template.wxml' />
+<view>
+  <template is="dialog" data="{{authorizeShow}}"></template>
+</view>
+<!-- 个人中心 -->
+  <view class='person-user'>
+    <view class='user-infomation'>
+    <view class='name'>{{nickName}}</view>
+      <view class='name-integral'>
+        <view class='integral' catchtap='onIntegral'>积分：
+          <text class='integral-num'>{{exp}}</text>
+        </view>
+        <view class='money' catchtap='onMyMoney'>
+        余额：
+        <text class='money-num'>￥{{money}}</text>
+      </view>
+      </view>
+      
+    </view>
+    <view class='avatar-img'>
+      <image src="{{avatar}}" class='user-avatar'></image>
+    </view>
+  </view>
+<view class='margin-line'></view>
+<view class='common-list coupon' catchtap='onMyCoupon'>
+    <view class='common-theme'>优惠券</view>
+    <view class='common-des'>
+      <text class='common-detail'>{{coupon}}</text>
+      <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+    </view>
+</view>
+<view class='margin-line'></view>
+<view class='common-list coupon' catchtap='onMyHistory'>
+    <view class='common-theme'>历史评价</view>
+    <view class='common-des'>
+      <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+    </view>
+</view>
+<view class='margin-line'></view>
+<view class='common-list coupon' catchtap='onCoupon'>
+    <view class='common-theme'>投诉建议</view>
+    <view class='common-des'>
+      <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+    </view>
+</view>
+<view class='margin-line'></view>
+<view class='common-list coupon' catchtap='onSetting'>
+    <view class='common-theme'>个人设置</view>
+    <view class='common-des'>
+      <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+    </view>
+</view>
+<view class='margin-line'></view>
+<view class='common-list coupon' catchtap='onCoupon'>
+    <view class='common-theme'>关于大鲵美肌</view>
+    <view class='common-des'>
+      <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+    </view>
+</view>
+<view class='margin-line'></view>
+<view class='common-list coupon' catchtap='onCoupon'>
+    <view class='common-theme'>我的邀请码</view>
+    <view class='common-des'>
+      <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+    </view>
+</view>
+<view class='margin-line'></view>

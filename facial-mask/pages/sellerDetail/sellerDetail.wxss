@@ -1,0 +1,140 @@
+/* pages/sellerDetail/sellerDetail.wxss */
+@import "../../template/evaluation/evaluation-template.wxss";
+.store-title {
+  width: 90%;
+  margin: 0 auto 75rpx;
+}
+.store-title .title-theme {
+  display: flex;
+  justify-content: space-between;
+}
+
+.store-title .title1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.store-title .distance{
+  font-size:14px;
+  color:#c8cbce;
+}
+.store-title .title2 {
+  width: 500rpx;
+  float: left;
+  font-size: 14px;
+  color: #c8cbce;
+}
+
+.store-title .daohang {
+  float: right;
+}
+.store-title .daohang {
+  float: right;
+  color:#604687;
+  font-size:14px;
+}
+
+.store-time{
+  width:90%;
+  height: 110rpx;
+  line-height: 110rpx;
+  margin:0 auto;
+  font-size:15px;
+  color:#696e74;
+}
+.service list__title .list__title--main{
+  font-size:18px;
+  font-weight: bold;
+}
+.evalute{
+  width:90%;
+  margin:0 auto;
+}
+.common-title{
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size:18px;
+  font-weight:bold;
+  border-bottom:1px solid #e6e6e6;
+}
+.head-img{
+  width:60rpx;
+  height: 60rpx;
+  float: left;
+  border-radius: 100%;
+}
+.evalute .evalute-detail{
+  float:float;
+  margin-left:75rpx;
+}
+.evalute .name-time{
+  font-size:14px;
+  margin-top:20rpx;
+  line-height: 27px;
+}
+.evalute .name-time .name{
+  float:left;
+}
+.evalute .name-time .time{
+  color:#8e959b;
+  float:right;
+}
+.evalute .star,.evalute .evalute-service{
+  font-size:14px;
+  color:#8e959b;
+  margin-bottom:20rpx;
+}
+.service-font{
+  margin-right:5px;
+}
+.evalute-comments .comments-detail{
+  font-size:16px;
+}
+.evalute .comments-img image{
+  float:left;
+  width:130rpx;
+  height:130rpx;
+  margin-right:10rpx;
+  margin-top:15rpx;
+}
+.star .star-font{
+  float:left;
+  margin-right:5px;
+}
+.comments-all{
+  font-size:16px;
+  color: #604687;
+  text-align: center;
+  margin:20px auto;
+}
+.store-information{
+  width:90%;
+  margin:0 auto;
+}
+.footer{
+  height: 300rpx;
+  background: #f0f3f5;
+  color:#9ea4aa;
+  position: relative;
+  font-size:14px;
+}
+.footer .footer-detail{
+  transform: translate(-50%,-50%);
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:100%;
+  text-align: center;
+}
+.footer .client{
+  font-size:18px;
+  color:#604687;
+  margin-bottom:10px;
+}
+.hint{
+  padding:20px;
+  text-align: center;
+  font-size:16px;
+  color:#696e74;
+}
+

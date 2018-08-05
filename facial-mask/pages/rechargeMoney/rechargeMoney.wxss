@@ -1,0 +1,27 @@
+/* pages/rechargeMoney/rechargeMoney.wxss */
+.recharge-label{
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+.recharge-label .label{
+  padding:30rpx 50rpx;
+  border:1px solid #e8e8e8;
+  font-size:16px;
+  color:#604687;
+  text-align: center;
+  border-radius: 5px;
+}
+.btn-area{
+  width:90%;
+  margin:70rpx auto;
+}
+.btn-area .sub{
+  background: #604687;
+  color:#fff;
+}
+.line-top{
+  height: 20rpx;
+  background: #fff;
+  border-top:1px solid #e8e8e8;
+}

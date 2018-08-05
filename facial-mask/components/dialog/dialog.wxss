@@ -1,0 +1,89 @@
+.mask_layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.modal_box {
+  width: 76%;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 10001;
+  background: #fafafa;
+  margin: -150px 12% 0 12%;
+  border-radius: 3px;
+}
+ 
+.title {
+  padding: 15px;
+  text-align: center;
+  background-color: gazure;
+  border-bottom:2px solid #eee;
+}
+ 
+.content {
+  overflow-y: scroll; /*超出父盒子高度可滚动*/
+}
+ 
+.btn {
+  width: 100%;
+  margin-top: 65rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: white;
+}
+ 
+.cancel {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+ 
+.btn .Sure {
+  width: 100%;
+  padding: 10px;
+  color: green;
+  text-align: center;
+  border-left:1px solid #eee;
+  box-shadow: none;
+  border-radius: none;
+}
+.img{
+  text-align: center;
+}
+.title-logo{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  text-align: center;
+}
+.modalMsg {
+  text-align: left;
+  margin-top: 0rpx;
+  display: block;
+  font-size:16px;
+  border-bottom: 2px solid #eee;
+  padding-bottom:5px;
+}
+.description{
+  padding-top:5px;
+  display: block;
+  text-align: left;
+  font-size:14px;
+  color:#666;
+}
+.content{
+  width:86%;
+  margin: 0 auto;
+}
+.btn{
+  border-top:2px solid #eee;
+}

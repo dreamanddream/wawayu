@@ -1,0 +1,23 @@
+<template name="orderDescription">
+  <view class='order-wrap'>
+  <view class='view-description'>
+    <image src='/images/banner.png' class='order-img'></image>
+    <view class='order-type'>
+      <view class='order-item'>美容嫩肤</view>
+      <view class='order-teacher'>
+        美容师：
+        <text class='teacher-name'>小雅</text> 价格：
+        <text class='teacher-price'>￥1999</text>
+      </view>
+      <view class='order-store'>
+        预约门店：
+        <text class='store-detail'>朝阳店</text>
+      </view>
+      <view class='order-address'>
+        门店地址：
+        <text class='detail-address'>昌平区北方明珠大厦10室</text>
+      </view>
+    </view>
+  </view>
+</view>
+</template>

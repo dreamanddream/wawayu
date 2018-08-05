@@ -1,0 +1,44 @@
+/* pages/changeTel/changeTel.wxss */
+.common-wrap{
+  border-bottom:1px solid #e8e8e8;
+}
+.btn-area{
+  margin-top:100rpx;
+}
+.tijiao{
+  background: #604687;
+  color:#fff;
+  font-size:16px;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+.quxiao{
+  border: 1px solid #604687;
+  color:#604687;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  background: #fff;
+}
+.write-tel,.check-code{
+  border-bottom:1px solid #e8e8e8;
+  color:#91979d;
+}
+.form .check-code{
+  display: flex;
+}
+
+.form .write-code{
+  border-right:1px solid #e8e8e8;
+  width:60%;
+}
+.form{
+  font-size:16px;
+}
+.form .write-code,.form .write-tel,.form .time{
+  padding:40rpx 0;
+}
+.form .time{
+  text-align: center;
+  flex: 1;
+}

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "wxc-icon": "../../dist/packages/@minui/wxc-icon/dist/index",
+    "wxc-flex": "../../dist/packages/@minui/wxc-flex/dist/index",
+    "wxc-loadmore": "../../dist/packages/@minui/wxc-loadmore/dist/index",
+    "modal": "../../components/dialog/dialog",
+    "wxc-list": "../../dist/packages/@minui/wxc-list/dist/index",
+    "wxc-rate":"../../dist/packages/@minui/wxc-rate/dist/index",
+    "wxc-avatar":"../../dist/packages/@minui/wxc-avatar/dist/index"
+  }
+}

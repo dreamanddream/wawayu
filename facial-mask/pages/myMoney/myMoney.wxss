@@ -1,0 +1,57 @@
+/* pages/myMoney/myMoney.wxss */
+.myMoney .money-fonts{
+  background: #6d4f9a;
+  color:#fff;
+  padding:60rpx 0;
+}
+.myMoney .money-title,.myMoney .money-num{
+  margin-left:60rpx;
+}
+.myMoney .money-title{
+  font-size:16px;
+}
+.myMoney .money-num{
+  font-size:30px;
+  font-weight: bold;
+}
+.myMoney .recharge-money{
+  background: #604687;
+  text-align: center;
+  padding:30rpx 0;
+  font-size:16px;
+  color:#fff;
+}
+.money-detail{
+  width:90%;
+  margin:0 auto;
+}
+.money-detail .money-title{
+  font-size:20px;
+  height: 120rpx;
+  line-height: 120rpx;
+  border-bottom:1px solid #e8e8e8;
+  font-weight: bold;
+}
+.money-list{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding:40rpx 0;
+  border-bottom:1px solid #e8e8e8;
+}
+.money-list .money-fonts{
+  font-size:16px;
+}
+.money-list .date{
+  color:#91979d;
+  font-size:12px;
+}
+.money-detail .money-num{
+  font-size:16px;
+  color:#6d4f9a;
+  font-weight: bold;
+  position: absolute;
+  top:50%;
+  transform: translate(0,-50%);
+  right: 0;
+}

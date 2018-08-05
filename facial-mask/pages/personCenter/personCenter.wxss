@@ -1,0 +1,69 @@
+/**index.wxss**/
+@import "../../template/dialog/dialog-template.wxss";
+
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+
+.person-user {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 30rpx auto;
+}
+
+.name-integral {
+  display: flex;
+  justify-content: space-between;
+}
+
+.person-user .name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom:30rpx;
+}
+.integral,.money{
+font-size: 14px;
+  color: #9ba1a7;
+}
+.integral{
+  margin-right:60rpx;
+}
+.integral .integral-num,.money .money-num{
+  color:#604687;
+}
+.person-user .user-information {
+  flex: 1;
+}
+.avatar-img .user-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.person-user .user-information {
+  flex: 1;
+}
+.avatar-img .user-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+

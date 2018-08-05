@@ -1,0 +1,19 @@
+<view hidden='{{modalHidden}}'>
+  <view class='mask_layer' bindtap='modal_click_Hidden' />
+  <view class='modal_box'>
+    <view class="title">微信授权</view>
+    <view class='content'>
+      <view class='img'>
+        <image src='/images/icon/opensmall.png' class='title-logo'></image>
+      </view>
+      <view class='content'>
+        <text class='modalMsg'>{{modalMsg}}</text>
+        <text class='description'>获得你的公开信息(昵称、头像等)</text>
+      </view>
+    </view>
+    <view class='btn'>
+      <view bindtap='modal_click_Hidden' class='cancel'>拒绝</view>
+      <button open-type="openSetting" class='Sure' bindopensetting="handler">允许</button>
+    </view>
+  </view>
+</view>

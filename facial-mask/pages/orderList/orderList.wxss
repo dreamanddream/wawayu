@@ -1,0 +1,53 @@
+@import "../../template/dialog/dialog-template.wxss";
+.order-label{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:30rpx;
+}
+.order-label .label{
+  padding:10rpx 20rpx;
+  border-radius: 10px;
+  font-size:16px;
+}
+.order-label .label.active{
+  background: #604687;
+  color:#fff;
+}
+/* 列表 */
+.view-list{
+  display: flex;
+  padding:30rpx 0;
+  justify-content: space-between;
+}
+.avatar-img .img{
+  width:148rpx;
+  height: 148rpx;
+}
+.order-des .order-name{
+  color:#604687;
+  font-size:16px;
+  margin-bottom:5rpx;
+}
+.order-des .order-num{
+  margin-bottom:5rpx;
+}
+.order-des{
+  flex: 1;
+  font-size:14px;
+  margin-left:20rpx;
+  margin-right:20rpx;
+}
+
+.order-des .name-price{
+  display: flex;
+}
+.order-des .beau-name,.order-des .price-num{
+  color:#91979d;
+}
+.order-des .beau-name{
+  margin-right:10rpx;
+}
+.order-type{
+  font-size:16px;
+  color:#604687;
+}

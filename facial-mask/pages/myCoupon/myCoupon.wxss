@@ -1,0 +1,85 @@
+/* pages/myCoupon/myCoupon.wxss */
+.label-wrap{
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  width:90%;
+  margin:30rpx auto;
+}
+.label-wrap .label{
+  padding:15rpx 25rpx;
+  border:1px solid #e8e8e8;
+  font-size:14px;
+  margin-right:20rpx;
+  margin-bottom:20rpx;
+  text-align: center;
+  border-radius: 20px;
+}
+.label-wrap .label.active{
+  background: #604687;
+  color:#fff;
+  border:none;
+}
+/* 我的优惠券 */
+.coupon-wrap{
+  width:90%;
+  margin:30rpx auto 0;
+  background: #f5f6f8;
+}
+.coupon-wrap .coupon-list{
+  border:1px solid #604687;
+  position: relative;
+  margin-bottom:30rpx;
+}
+.coupon-list{
+  padding:40rpx 20rpx;
+  border-radius: 10px;
+  background: #fff;
+}
+.coupon-list .price{
+  font-size:14px;
+}
+.coupon-list .price-num{
+  font-size:30px;
+  font-weight: bold;
+  color:#604687;
+}
+.coupon-list .coupon-left{
+  float: left;
+  border-right:1px dashed #604687;
+  padding-right:20rpx;
+}
+.coupon-list .coupon-right{
+  float:left;
+  padding-left:20rpx;
+}
+.coupon-list .choose-price{
+  font-size:14px;
+  color: #604687;
+}
+.coupon-list .coupon-des{
+  float:left;
+}
+.coupon-des .coupon-title{
+  font-size:16px;
+  margin-bottom:20rpx;
+}
+.coupon-des .coupon-date{
+  font-size: 14px;
+}
+.coupon-button{
+  float:left;
+  font-size:14px;
+  background: #604687;
+  text-align: center;
+  height:60rpx;
+  line-height: 60rpx;
+  color:#fff;
+  margin-left:10rpx;
+  padding:10rpx 25rpx;
+  position: absolute;
+  top:50%;
+  transform: translate(0,-50%);
+  border-radius: 10px;
+  right:20rpx;
+}

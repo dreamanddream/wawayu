@@ -1,0 +1,36 @@
+<import src='../../template/dialog/dialog-template.wxml' />
+<view>
+  <template is="dialog" data="{{authorizeShow}}"></template>
+</view>
+<view class="beautician">
+  <view class='beautician-title'>
+    <view class='big-title'>选择美容师</view>
+    <view class='two-title'>选择您最喜欢的美容师为您服务</view>
+  </view>
+  <view class='beautician-wrap'>
+    <view class='beautician-list-wrap'>
+      <block wx:for="{{person}}" wx:for-item="item" wx:key="unique">
+        <view class='beautician-list'>
+          <view class='icon-wrap'>
+            <image src='/images/banner.png' class='icon-img' mode="aspectFill" />
+            <view class='icon-message' wx:if="{{rest}}">今日休息</view>
+          </view>
+          <view class='beautician-detail'>
+            <view class='name-years'>
+              <text class='name'>{{item.real_name}}</text>
+              <text class='years'>{{item.experience}}年经验</text>
+            </view>
+            <view class='detail'>{{item.description}}</view>
+            <view class='price'>￥{{item.price}}</view>
+          </view>
+          <view class='order-time' data-id="{{item.id}}" catchtap='onChooseTime'>
+            <view class='book-order'>立即下单</view>
+            <view class='book-time'>最早可约
+              <text>{{item.original_time}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

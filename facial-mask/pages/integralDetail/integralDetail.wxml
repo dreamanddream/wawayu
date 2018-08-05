@@ -1,0 +1,24 @@
+<!--pages/integralDetail/integralDetail.wxml-->
+<view class='myMoney'>
+<view class="money-fonts">
+  <view class='money-title'>账户积分</view>
+  <view class='money-num'>0</view>
+</view>
+</view>
+<!-- 支付明细 -->
+<view class='money-detail'>
+  <view class='money-title'>积分明细</view>
+  <block wx:for="{{integral}}" wx:for-item="item" wx:key="unique">
+    <view class='money-list'>
+    <view class='money-des'>
+      <view class='money-fonts'>{{item.msg}}</view>
+      <view class='date'>2018-07-31</view>
+    </view>
+    <view class='money-num'>{{item.value}}</view>
+  </view>
+  </block>
+</view>
+<!-- 没有数据的相关处理 -->
+<view wx:if="{{abnor}}">
+  <wxc-abnor type="DATA"></wxc-abnor>
+</view>

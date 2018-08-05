@@ -1,0 +1,23 @@
+<view class='common-wrap'>
+<view class='common-title'>
+  <view class='big-title'>修改年龄</view>
+  <view class='two-title'>请选择年龄，以便我们更好的为您服务</view>
+</view>
+</view>
+
+<view class='year-choose'>
+  <view class='common-item'>
+    <view class='year'>70后</view>
+    <view class='choose-icon'>
+    <wxc-icon size="30" type="right" color="#604687"></wxc-icon>
+    </view>
+  </view>
+  <view class='common-item'>
+    <view class='year'>其他</view>
+    <view class='choose-icon'>
+    <wxc-icon size="30" type="right" color="#604687"></wxc-icon>
+    </view>
+  </view>
+</view>
+<view class='button'>确定</view>
+  

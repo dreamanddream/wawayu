@@ -1,0 +1,26 @@
+<!--pages/orderDeatail/orderDetail.wxml-->
+<import src='../../template/order/order-template.wxml' />
+<view class='common-title'>
+  <view class='big-title'>订单详情</view>
+</view>
+<template is="orderDescription"></template>
+<view class='margin-line'></view>
+<view class='common-list coupon' catchtap='onYear'>
+  <view class='common-theme'>订单号</view>
+  <view class='common-des'>
+    <text class='common-detail'>1111111111</text>
+  </view>
+</view>
+<view class='common-list coupon' catchtap='onYear'>
+  <view class='common-theme'>订单状态</view>
+  <view class='common-des'>
+    <text class='common-detail'>1111111111</text>
+  </view>
+</view>
+<view class='common-list coupon' catchtap='onYear'>
+  <view class='common-theme'>预约美容时间</view>
+  <view class='common-des'>
+    <text class='common-detail'>2018/07/06</text>
+  </view>
+</view>
+<view class='chooseEvaluate'><view class='font'>评价</view></view>

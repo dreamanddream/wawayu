@@ -1,0 +1,31 @@
+<template name="evaluation">
+<view class='evalute'>
+         
+          <view class='evalute-wrap clearfix'>
+            <image class="head-img" src="{{comments.avatarurl}}" />
+            <view class='evalute-detail'>
+              <view class='name-time clearfix'>
+                <view class='name'>{{comments.nickname}}</view>
+                <view class='time'>{{comments.create_time}}</view>
+              </view>
+              <view class='star clearfix'>
+                <view class='star-font'>星级</view>
+                <wxc-rate value="{{comments.stars}}" size="18" padding="10" color="#999" active-color="#604687"></wxc-rate>
+              </view>
+              <view class='evalute-service'>
+                <text class='service-font'>服务</text>
+                <text>{{comments.service_name}}</text>
+              </view>
+              <view class='evalute-comments'>
+                <view class='comments-detail'>
+                  {{comments.content}}
+                </view>
+                <view class='comments-img'>
+                  <image src="https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg" />
+                  <image src="https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg" />
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+</template>

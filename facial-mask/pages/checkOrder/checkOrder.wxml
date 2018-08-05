@@ -1,0 +1,73 @@
+<!--pages/checkOrder/checkOrder.wxml-->
+<view class='order-time'>
+  <text>请在</text>
+  <text class='dynamic-time'>00:58</text>
+  <text>内支付，超时需要重新预约</text>
+</view>
+<view class='common-title'>
+  <view class='big-title'>核对订单</view>
+  <view class='two-title'>请认真核对订单后下单</view>
+</view>
+<!-- 订单内容 -->
+<view class='order-wrap'>
+  <view class='view-description'>
+    <image src='/images/banner.png' class='order-img'></image>
+    <view class='order-type'>
+      <view class='order-item'>美容嫩肤</view>
+      <view class='order-teacher'>
+        美容师：
+        <text class='teacher-name'>小雅</text> 价格：
+        <text class='teacher-price'>￥1999</text>
+      </view>
+      <view class='order-store'>
+        预约门店：
+        <text class='store-detail'>朝阳店</text>
+      </view>
+      <view class='order-address'>
+        门店地址：
+        <text class='detail-address'>昌平区北方明珠大厦10室</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='margin-line'></view>
+<view class='check-time'>
+  <view class='check-font'>预约美容时间</view>
+  <view class='check-arrow'>
+    <text class='check-date'>2018/07/07 13:00</text>
+    <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+  </view>
+</view>
+<view class='margin-line'></view>
+<view class='pay-type'>
+  <view class='pay-title'>
+    支付方式
+  </view>
+  <view class='pay-detail clearfix'>
+    <view class='pay-wrap clearfix'>
+      <view class='weixin-icon'>
+        <wxc-icon size="60" type="weixin" color="#fff"></wxc-icon>
+      </view>
+      <view class='pay-details'>
+        <view class='one-des'>微信支付</view>
+        <view class='two-des'>推荐使用微信支付</view>
+      </view>
+      <view class='check-icon'>
+        <wxc-icon size="50" type="check" color="#604687"></wxc-icon>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='margin-line'></view>
+<view class='common-list coupon' catchtap='onCoupon'>
+    <view class='common-theme'>优惠券</view>
+    <view class='common-des'>
+      <text class='common-detail'>-￥100</text>
+      <wxc-icon size="30" type="arrow-right" color="#e8e8e8"></wxc-icon>
+    </view>
+</view>
+<view class='margin-line-top'></view>
+<view class='choose-result'>
+  <view class='choose-date'>总计：￥1999</view>
+  <view class='choose-button' catchtap='choose'>立即支付</view>
+</view>
